@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Santa Generator</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎅 Secret Santa Generator 🎁</h1>
+        <div id="inputSection" class="input-section">
+            <textarea id="namesInput" placeholder="Enter names (one per line)"></textarea>
+            <button id="generateButton">Generate Matches</button>
+        </div>
+        <div id="outputSection" class="output-section hidden">
+            <h2>✨ Matches ✨</h2>
+            <ul id="resultList"></ul>
+            <button id="downloadPDFButton" class="hidden">Download PDF</button>
+        </div>
+    </div>
+    <div id="confettiContainer" class="falling-confetti hidden"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="./src/index.js"></script>
+
+</body>
+</html>
